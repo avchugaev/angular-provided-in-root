@@ -5,6 +5,6 @@ import { EntityService } from "../../service/entity.service";
   selector: "lib-lazy-two",
   template: "Lazy two"
 })
-export class LazyOneComponent {
+export class LazyTwoComponent {
   constructor(readonly service: EntityService) {}
 }
