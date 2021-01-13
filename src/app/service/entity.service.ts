@@ -4,8 +4,12 @@ import { Injectable } from "@angular/core";
   providedIn: "root"
 })
 export class EntityService {
+  static count = 0;
+
   constructor() {
-    console.log("new instance");
+    EntityService.count += 1;
+
+    console.log("New EntityService, instance #", EntityService.count);
   }
 
   get(): string {
